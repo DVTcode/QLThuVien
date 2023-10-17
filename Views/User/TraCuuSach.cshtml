@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "TraCuuSach";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    .imgbook {
+        transition: all 1s ease-in;
+        width: 400px;
+    }
+
+        .imgbook:hover {
+            transform: scale(0.9);
+            cursor: pointer;
+        }
+    .text-center{
+        display: flex;
+        margin-top:10px;
+    }
+    .thumbnail{
+        width:300px;
+    }
+</style>
+
+<h2>Tra Cứu Sách</h2>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tên sách<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Tên sách</a></li>
+                    <li><a href="#">Tên tác giả</a></li>
+                    <li><a href="#">Tên chủ đề</a></li>
+                </ul>
+            </div><!-- /btn-group -->
+            <input type="text" class="form-control" aria-label="...">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+<div class="row text-center">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div class="thumbnail">
+            <img src="~/Image/nhasachmienphi-cuoc-doi-ngoai-cua.jpg" alt="Thumbnail Image 1" class="img-responsive img-rounded imgbook" style="width:400px; height: 300px;">
+            <div class="caption">
+                <h4 style="min-height: 70px;">
+                    <a href="#">Cuộc đời ngoài cửa</a>
+                </h4>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                            Add to Cart
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div class="thumbnail">
+            <img src="~/Image/nhasachmienphi-chiec-ngai-vang.jpg" alt="Thumbnail Image 2" class="img-responsive img-rounded imgbook" style="width:400px; height: 300px;">
+            <div class="caption">
+                <h4 style="min-height: 70px;">
+                    <a href="#">Chiếc ngai vàng</a>
+                </h4>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                            Add to Cart
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div class="thumbnail">
+            <img src="~/Image/nhasachmienphi-dong-rac-cu-tron-bo.jpg" alt="Thumbnail Image 2" class="img-responsive img-rounded imgbook" style="width:400px; height: 300px;">
+            <div class="caption">
+                <h4 style="min-height: 70px;">
+                    <a href="#">Đống rác củ trọn bộ</a>
+                </h4>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                            Add to Cart
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
